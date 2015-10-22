@@ -1038,6 +1038,7 @@
 							cornerRadius: this.options.tooltipCornerRadius,
 							text: template(this.options.tooltipTemplate, Element),
 							chart: this.chart,
+							element: Element,
 							custom: this.options.customTooltips
 						}).draw();
 					}, this);
