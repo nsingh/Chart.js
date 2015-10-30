@@ -1018,6 +1018,7 @@
 						title: ChartElements[0].label,
 						chart: this.chart,
 						ctx: this.chart.ctx,
+						datasets: this.datasets,
 						custom: this.options.customTooltips
 					}).draw();
 

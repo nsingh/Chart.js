@@ -69,7 +69,7 @@
         	innerHtml += [
         		'<div class="chartjs-tooltip-section">',
         		'	<span class="chartjs-tooltip-key" style="background-color:' + tooltip.legendColors[i].fill + '"></span>',
-        		'	<span class="chartjs-tooltip-value">' + tooltip.labels[i] + '</span>',
+        		'	<span class="chartjs-tooltip-value">' + tooltip.datasets[i].label + " : " +tooltip.labels[i] + '</span>',
         		'</div>'
         	].join('');
         }
@@ -90,7 +90,7 @@
     var lineChartData = {
         labels: ["January", "February", "March", "April", "May", "June", "July"],
         datasets: [{
-            label: "My First dataset",
+            label: "Number of unique participants",
             fillColor: "rgba(220,220,220,0.2)",
             strokeColor: "rgba(220,220,220,1)",
             pointColor: "rgba(220,220,220,1)",
@@ -99,7 +99,7 @@
             pointHighlightStroke: "rgba(220,220,220,1)",
             data: [randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor(), randomScalingFactor()]
         }, {
-            label: "My Second dataset",
+            label: "Number of posts",
             fillColor: "rgba(151,187,205,0.2)",
             strokeColor: "rgba(151,187,205,1)",
             pointColor: "rgba(151,187,205,1)",
