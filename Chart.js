@@ -1,7 +1,7 @@
 /*!
- * Chart.js
+ * Chart.js [With Patches]
  * http://chartjs.org/
- * Version: 1.0.2
+ * Version: 1.0.6
  *
  * Copyright 2015 Nick Downie
  * Released under the MIT license
@@ -1039,6 +1039,7 @@
 							cornerRadius: this.options.tooltipCornerRadius,
 							text: template(this.options.tooltipTemplate, Element),
 							chart: this.chart,
+                            element: Element,
 							custom: this.options.customTooltips
 						}).draw();
 					}, this);
